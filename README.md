@@ -1,1 +1,1 @@
-# DiscordBotUniverse
+# discordbotuniverse-v2

@@ -1,0 +1,6 @@
+@ECHO OFF
+echo Installing the modules....
+echo Creating node_module folder...
+npm install -d --save
+pause
+echo All the modules are installed!

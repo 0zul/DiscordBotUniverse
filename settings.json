@@ -1,0 +1,31 @@
+{
+  "token": "NTEyMTIxNDEwMzg3MzEyNjQx.D0x_7A.vslww4ToNspwJwNznfcqHongSR0",
+  "prefix": "%",
+  "guildID": "547115713987477504",
+  "clientID": "512121410387312641",
+  "clientSecret": "uMx74tHwhgW1l-ysKADeSlCv4zj6YuqA",
+  "callbackURL": "https://3e9f67d8.ngrok.io/auth/callback",
+  "secret": "kjfhaugdfa6gtdujabnfygafyhajnfuafjjanfiuahfuwsahfuh",
+  "rethink": {
+    "host": "127.0.0.1",
+    "port": 28015,
+    "db": "b4d"
+   },
+  "useragent": "Discord Bot Universe v2 Rewrite",
+  "channels": {
+    "weblog": "547118155529715723",
+    "verification_log": "547118790249414657"
+  },
+  "roles": {
+    "staff": "547119044449271847",
+    "admins": "547119352009195531",
+    "bot": "547119614950113294",
+    "bot_developer": "547119774098915348",
+    "verified_developer": "547120285946609684",
+    "verified_bot": "547120180275314719"
+  },
+  "bot_admins": ["402316460325601292", "398536643172237314"],
+  "emojis": {
+    "verified": "aDBUVerified:549503915763433483"
+  }
+}
