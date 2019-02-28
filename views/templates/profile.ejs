@@ -1,0 +1,79 @@
+<%- include('../partials/headeruser.ejs') %>
+<section class="hero is-medium is-info">
+<% if (!userInfo.background) { %>
+  <div class="hero-bg" id="bgslide" style="background: url(/img/image0.png); background-color:rgba(0, 0, 0, 0.2);">
+    <% } %>
+<% if (userInfo.background) { %>
+  <div class="hero-bg" id="bgslide" style="background: url(<%= userInfo.background %>) no-repeat; background-size: 100%;">
+      <% } %>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2"><img class="img-circle-profiles" src="https://cdn.discordapp.com/avatars/<%= userInfo.id %>/<%= userInfo.avatar %>?size=256"
+            alt="The image failed to load." onerror="this.onerror=null;this.src=&quot;https://cdn.discordapp.com/embed/avatars/0.png&quot;;"></div>
+        <div class="column is-10">
+          <p class="title" id="highlight">
+            <%= userInfo.tag %>
+	    <% if (userInfo.isBanned == true) { %>
+            <img id="banned" style="width: 40px; height: 40px" src="/img/Banned.png" title="Banned User">
+            <% } %>
+            <% if (userInfo.isAdmin == true) { %>
+              <img id="webadmin" style="width: 40px; height: 40px" src="/img/admin.png" title="Website Administrator">
+              <% } %>
+              <% if (userInfo.isMod == true|| userInfo.isAdmin == true) { %>
+              <img id="webmod" style="width: 40px; height: 40px" src="/img/staff.png" title="Website Moderator">
+              <% } %>
+            <% if (userInfo.isVerifiedDev == true) { %>
+            <img id="vdev" style="width: 40px; height: 40px" src="/img/verified.png" title="Verified Developer">
+            <% } %>
+          </p>
+          <p class="subtitle" id="highlight">
+            <%= userInfo.bio || "This user has not set a bio. "%>
+          </p>
+          <p class="lastseen" id="highlight">
+            <% if (userInfo.lastedited) { %>
+              <%= "Last edited at: " + new Date(userInfo.lastedited).toString().split("GMT")[0]%>
+              <% } %>
+              <% if (!userInfo.lastedited) { %>
+                This user has not edited their profile yet.
+              <% } %>
+          </p>
+          <br>
+          <div class="field is-grouped is-grouped-multiline">
+            <% if (user) { %>
+            <% if (user.mod || user.admin || user.id == userInfo.id) { %>
+            <a href="/user/<%= userInfo.id %>/edit" class="button is-danger">Edit Profile</a>
+            <% } %>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section is-profile">
+  <div class="container is-fluid">
+    <h3 class="title is-3" id="titlefront"><%= userInfo.username %>'s Bots</h3>
+    <h2 class="subtitle" id="subfront"><%= userInfo.username %>'s bots that are publicly listed.</h2>
+    <br>
+    <div class="_bot-list columns is-multiline is-mobile">
+      <% if (botsData.length == 0) { %>
+      <h3 class="title is-3">No bots available to list.</h3>
+      <% } else { %>
+      <%- botChunk.map(chunk => `${chunk.map(bot => include("../partials/botcard.ejs", {bot, resubmit: false})).join("")}`).join("") %>
+      <% } %>
+    </div>
+  </div>
+</div>
+<% if (user && userInfo.id == user.id) { %>
+<% if (storedBotsData.length > 0) { %>
+<br>
+<h3 class="title is-3" id="titlefront">Stored Bots</h3>
+<h2 class="subtitle" id="subfront">Easily resubmit your denied or deleted bots.</h2>
+<br>
+<div class="_bot-list columns is-multiline is-mobile">
+  <%- storedChunk.map(chunk => `${chunk.map(bot => include("../partials/botcard.ejs", {bot, resubmit: true})).join("")}`).join("") %>
+</div>
+</div>
+<% } %>
+<% } %>
+<%- include('../partials/footer.ejs') %>

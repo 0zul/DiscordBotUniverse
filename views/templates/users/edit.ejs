@@ -1,0 +1,56 @@
+<%- include('../../partials/header.ejs') %>
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+          Edit Profile
+        </h1>
+        <h2 class="subtitle">
+          Update your public user profile.
+      </h2>
+      <% if (getUser.lasteditedby) { %>
+      <h2 class="subtitle">
+        <%= "Your profile was last edited by " + getEdit.tag + " (" + getUser.lasteditedby + ")" + " on " + new Date(getUser.lastedited).toString().split("GMT")[0]%>
+    <% } %>
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="margin-top-20 container">
+    <form method="POST">
+        <div class="field">
+            <label class="label">Username</label>
+            <div class="control">
+                <input class="input-dark" value="<%= getUser.tag %>" disabled>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Bio</label>
+            <div class="control">
+                <input class="input-dark" name="bio" type="text" value="<%= getUser.bio %>" maxlength="200" placeholder="Tell people about yourself.">
+                <p class="help">Moderators have the right to remove your bio if they believe you are abusing this feature.</p> 
+            </div>
+        </div>  
+        <div class="field">
+            <label class="label">Background</label>
+            <div class="control">
+                <input class="input-dark" name="background" type="url" value="<%= getUser.background %>" placeholder="Insert an image URL for your banner. (URL must end in .png or .jpg or .gif)" pattern="^http(s?)\:.*\.(?:jpg|gif|png)$">
+                <p class="help">Moderators have the right to remove your background if they believe you are abusing this feature.</p> 
+            </div>
+        </div>  
+        <div class="field">
+            <label class="label">Website</label>
+            <div class="control">
+                <input class="input-dark" name="website" type="url" value="<%= getUser.website %>" placeholder="Insert your website's URL.">
+                <p class="help">Moderators have the right to remove your website if they believe you are abusing this feature.</p> 
+            </div>
+        </div>  
+        <div class="field">
+            <div class="control">
+                <button class="button is-link is-pulled-right" style="z-index: 1;">Update</button>
+            </div>
+            </div>
+    </div>                                 
+    </form>
+</div>
+<%- include('../../partials/footer.ejs') %>

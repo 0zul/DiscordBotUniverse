@@ -1,0 +1,110 @@
+<%- include('../../partials/header.ejs') %>
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+          New Bot
+        </h1>
+        <h2 class="subtitle">
+          Submit a new bot to be added to the list.
+      </h2>
+    </div>
+  </div>
+</section>
+<div class="margin-top-20 container">
+    <form method="POST">
+        <div class="field">
+            <label class="label">Client ID</label>
+            <div class="control">
+                <input class="input-dark" pattern="{17,18}" maxlength="18" name="client_id" type="text" placeholder="000000000000000000" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Prefix</label>
+            <div class="control">
+                <input class="input-dark" name="prefix" pattern="{1,30}" maxlength="30" type="text" placeholder="?" required>
+            </div>
+        </div>  
+        <div class="field">
+                <label class="label">Bot Library</label>
+                <div class="control">
+                  <div class="select">
+                    <select name="library" required>
+                            <option value="Other" selected>Other</option>
+                            <option value="discordcr">discordcr</option>
+                            <option value="Discord.Net">Discord.Net</option>
+                            <option value="DSharpPlus">DSharpPlus</option>
+                            <option value="Nostrum">Nostrum</option>
+                            <option value="DiscordGo">DiscordGo</option>
+                            <option value="Discord4J">Discord4J</option>
+                            <option value="Javacord">Javacord</option>
+                            <option value="JDA">JDA</option>
+                            <option value="discord.io">discord.io</option>
+                            <option value="discord.js">discord.js</option>
+                            <option value="Discordie">Discordie</option>
+                            <option value="Eris">Eris</option>
+                            <option value="Discordia">Discordia</option>
+                            <option value="RestCord">RestCord</option>
+                            <option value="Yasmin">Yasmin</option>
+                            <option value="disco">disco</option>
+                            <option value="discord.py">discord.py</option>
+                            <option value="discordrb">discordrb</option>
+                            <option value="discord-rs">discord-rs</option>
+                            <option value="serenity">serenity</option>
+                            <option value="SwiftDiscord">SwiftDiscord</option>
+                            <option value="Sword">Sword</option>
+                    </select>
+                </div>
+            </div>
+        </div> 
+        <div class="field">
+                <label class="label">Bot Invite</label>
+                <div class="control">
+                    <input class="input-dark" name="invite" maxlength="125" placeholder="https://discordapp.com/oauth2/authorize?client_id=000000000000000000&scope=bot&permissions=0">
+                </div>
+            </div> 
+            <!-- pattern="https\:\/\/discordapp\.com\/oauth2\/authorize(\?client_id=[0-9]{17,18}\&scope=bot(&permissions=[-]?[0-9])?|\?client_id=[0-9]{17,18}(\&permissions=[-]?[0-9])?\&scope=bot||\?scope=bot\&client_id=[0-9]{17,18}(\&permissions=[-]?[0-9])?|\?scope=bot(\&permissions=[-]?[0-9])?\&client_id=[0-9]{17,18}|\?(&permissions=[-]?[0-9])\&client_id=[0-9]{17,18}\&scope=bot|\?(&permissions=[-]?[0-9])\&scope=bot\&client_id=[0-9]{17,18})"-->
+            <div class="field">
+                    <label class="label">Additional Owner IDs (space-separated, up to 5)</label>
+                    <div class="control">
+                        <input class="input-dark" name="owners" maxlength="100" pattern="([0-9]{17,18}[\s]?){0,5}" type="text" placeholder="000000000000000000 111111111111111111" title="Please provide 0-5, 17-18 digit Discord user IDs, separated by spaces">
+                    </div>
+                </div>
+                <div class="field">
+                        <label class="label">Short Description</label>
+                        <div class="control">
+                            <input class="input-dark" name="short_desc" maxlength="200" type="text" placeholder="Something meaningful, that will draw people to your bot!" required>
+                        </div>
+                </div>  
+                <div class="field">
+                        <label class="label">Long Description (Supports markdown)</label>
+                        <div class="control">
+                          <textarea class="textarea textarea-dark" name="long_desc" placeholder="A full description of your bot, what it does, how it functions, what it's commands are, etc" class="textarea" required></textarea>
+                        </div>
+                      </div>   
+                      <div class="field">
+                            <label class="label">GitHub URL</label>
+                            <div class="control">
+                                <input class="input-dark" maxlength="300" pattern="https\:\/\/github.com\/[\w.-]{1,}\/[\w.-]{1,}[\/]?" title="Please provide a link to a valid github repository" name="github" type="url" placeholder="https://github.com/BotsForDiscord/Kenny.js">
+                            </div>
+                        </div>  
+                        <div class="field">
+                                <label class="label">Support Server Invite</label>
+                                <div class="control">
+                                    <input class="input-dark" maxlength="50" pattern="https\:\/\/((discord.gg\/\w.*)|(discordapp.com\/invite\/\w.*))" name="support" type="url"  title="Please provide a valid invite link starting with https://discord.gg/ or https://discordapp.com/invite/" placeholder="https://discord.gg/j5SRg4d">
+                                </div>
+                            </div> 
+                            <div class="field">
+                                    <label class="label">Notes to the approver <i>(How to use etc.)</i></label>
+                                    <div class="control">
+                                      <textarea name="notes" class="textarea textarea-dark"></textarea>
+                                    </div>
+                                  </div>                                 
+            <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link">Submit</button>
+            </div>
+            </div>
+    </form>
+</div>
+<%- include('../../partials/footer.ejs') %>

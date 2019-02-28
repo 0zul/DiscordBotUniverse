@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title><%= title || "Page" %> - Discord Bot Universe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="discordbotlist,discord bot list,list,discordlist,discord bots list,discordbotslist,discord,discordapp,botsfordiscord,discordbot,discord bot,bot,discordbots,discord bots,bots,discord music bot,discordmusicbot,discordmusic,discord music,discord bots music,bots for discord,for,discordapp bots,discordappbots,dbot,dbots,discord bots mee6,discord bot api,discord bot commands,discord download,discord servers,discord chat,discord canary,discord background,discord bot api,discord bot maker">
+  <meta name="theme-color" content="#7289DA">
+  <meta name="twitter:card" value="summary">
+  <meta name="twitter:title" content="<%= bot.name %>">
+  <meta name="twitter:description" content="<%= bot.short_desc %>">
+  <meta name="twitter:image" content="https://cdn.discordapp.com/avatars/<%= bot.id %>/<%= bot.avatar %>.png?size=512">
+  <% bot.ownerinfo.forEach(owner => { 
+    if (owner) { %>
+    <% if (owner.id == bot.owner) { %>
+  <meta name="author" content="<%= owner.tag %>">
+  <% }}}) %>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" value="Discord Bot Universe">
+  <meta property="og:title" content="<%= bot.name %>">
+  <meta property="og:url" content="https://3e9f67d8.ngrok.io/bots/<%= bot.id %>">
+  <meta property="og:description" content="<%= bot.short_desc %>">
+  <meta property="og:image" content="https://cdn.discordapp.com/avatars/<%= bot.id %>/<%= bot.avatar %>.png?size=512">
+  <link href="/img/image0.png" rel="shortcut-icon" />
+  <link href="/img/image0.png" rel="icon" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- it's ok to move jquery to here -->
+  <!-- This style is temporary here -->
+  <style>
+    @keyframes logo-jump {
+      to {
+        transform: translate(0, -15px);
+      }
+    }
+
+    /* This is deprecated for user and bot pages
+    nav.navbar {	
+      border-bottom: 1px solid #7289da;	
+    }*/
+
+    nav.navbar.mini {
+      opacity: 0.95;
+      transition: opacity 0.2s ease;
+    }
+
+    nav.navbar.mini:hover {
+      opacity: 1;
+    }
+  </style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+<body>
+<nav class="navbar is-fixed-top">
+  <div class="container">
+    <div class="navbar-brand">
+    <a class="_brand navbar-item" href="/"><img class="__logo" src="/img/image0.png"> &nbsp; Discord Bot Universe</a>
+    <div class="navbar-burger burger" data-target="navbarmobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div> 
+  <div id="navbarmobile" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/">Home</a>
+      <a class="navbar-item" href="/docs">Help</a>
+      <a class="navbar-item" href="/partners">Partners</a>
+      <a class="navbar-item" href="https://discord.gg/VXhWpKV">Join our Discord</a>
+      <a class="navbar-item" href="/bots">All Bots</a>
+      <% if (user) { %>
+      <a class="navbar-item" href="/bots/add">Add Bot</a>
+      <a class="navbar-item" href="/bots/verification">Verification</a>
+      <% if (user.mod || user.admin) { %>
+      <a class="navbar-item" href="/staff">Staff</a>
+    </div>
+    <% } %>
+    <% } %>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item"></div>
+            <% if (!user) { %>
+                <a href="/auth" class="navbar-item">Login</a>
+            <% } else { %>
+              <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link"><%= user.username + "#" + user.discriminator %></a>
+                  <div class="navbar-dropdown">
+                    <a href="/user/<%= user.id %>" class="navbar-item">Profile</a>
+                      <a class="navbar-item" href="/auth/logout">Logout</a>
+                  </div>
+              </div>
+            <% } %>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+

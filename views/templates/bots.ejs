@@ -1,0 +1,55 @@
+<%- include('../partials/header.ejs') %>
+<% var buttons = "";
+for(let i=1;i<pages;i++) {
+    if(i === page) {
+        buttons+= `<a href="/bots?page=${i}" class="pagination-link is-current" aria-label="Goto page ${i}">${i}</a>`;
+    } else {
+        buttons+= `<a href="/bots?page=${i}" class="pagination-link "aria-label="Goto page ${i}">${i}</a>`;
+    }
+}
+%>
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <div class="container">
+      <div class="_subcontainer">
+          <div class="welcome">
+              <h1 class="title">
+                  Bots
+              </h1>
+              <h2 class="subtitle">
+                View all the bots listed.
+              </h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-fluid">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <% if (page > 1) { %>
+                <a href="/bots?page=<%= page - 1 %>" class="pagination-previous">Previous</a>
+            <% } else { %>
+                <a class="pagination-previous is-disabled">Previous</a>
+            <% } %>
+            <% if (page < pages) { %>
+                <a href="/bots?page=<%= page + 1 %>" class="pagination-next">Next page</a>
+            <% } else { %>
+                <a class="pagination-next is-disabled">Next page</a>
+                <% } %>
+                <ul class="pagination-list">
+                <%- buttons %>
+                </ul>
+              </nav>
+    <br>
+    <div class="_bot-list columns is-multiline is-mobile">
+      <% if (bots.length == 0) { %>
+      <h3 class="title is-3">No bots available.</h3>
+      <% } else { %>
+      <%- botChunk.map(chunk => `${chunk.map(bot => include("../partials/botcard.ejs", {bot, resubmit: false})).join("")}`).join("") %>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+<%- include('../partials/footer.ejs') %>

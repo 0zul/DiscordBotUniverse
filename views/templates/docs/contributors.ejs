@@ -1,0 +1,41 @@
+<%- include('../../partials/header.ejs') %>
+<% /*include('../../../settings.json')
+var contrib = "";
+  config.contributors.forEach((contributor)=>{
+    if(typeof contributor.link !== "undefined") {
+      contrib+=`<li><a href="${contributor.link}">${contributor.name}</a>: ${contributor.contrib.join(", ")}</li>`;
+    } else {
+      contrib+=`<li>${contributor.name}: ${contributor.contrib.join(", ")}</li>`;
+    }
+  })*/
+%>
+
+<!----section class="hero is-medium is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Contributors
+      </h1>
+      <h2 class="subtitle">
+        All the people that helped make this a thing!
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-fluid has-text-black">
+        <div class="content">
+            <h2>Thank you to these people:</h2>
+            <ul>
+            <%- /*contrib;*/ %>
+            <li><a href="https://www.donovand.info">Donovan_DMC</a>: Website Backend, <a href="https://github.com/BotsForDiscord/Kenny.js">Kenny Website Bot</a>, Partial Website Frontend.</li>
+            <li><a href="https://github.com/DetectiveHuman">DetectiveHuman</a>: Website Backend.</li>
+            <li><a href="https://github.com/cloudrex">CloudRex</a>: Website Frontend.</li>
+            <li><a href="https://github.com/SarpTurker">SarpTurker</a>: Website VPS.</li>
+            <li><a href="https://github.com/YorKAARGH">York</a>: Website Bot Widgets</li>
+            <li><a href="https://habchy.com">Habchy</a>: Website Backend,  Website Frontend.</li>                                                                                  
+          </ul>
+    </div>
+  </div>
+</section--->
+<%- include('../../partials/footer.ejs') %>
