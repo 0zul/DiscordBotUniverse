@@ -23,7 +23,7 @@
     "enmap": "4.8.1",
     "eslint-config-eslint": "5.0.1",
     "express": "4.16.4",
-    "fs-nextra": "0.3.8",
+    "fs-nextra": "0.4.3",
     "http-errors": "1.7.1",
     "marked": "0.4.0",
     "morgan": "1.9.1",
