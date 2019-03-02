@@ -24,7 +24,7 @@
     "eslint-config-eslint": "5.0.1",
     "express": "4.16.4",
     "fs-nextra": "0.4.3",
-    "http-errors": "1.7.1",
+    "http-errors": "1.7.2",
     "marked": "0.4.0",
     "morgan": "1.9.1",
     "ms": "2.1.1",
