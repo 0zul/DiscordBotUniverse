@@ -65,6 +65,6 @@ app.use((err, req, res, next) => {
   res.render('error', { title: 'Error', status: err.status, message: err.message });
 });
 
-server.listen(80, "127.8.0.1");
+server.listen(80, "localhost");
 
 

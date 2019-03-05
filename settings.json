@@ -4,7 +4,7 @@
   "guildID": "547115713987477504",
   "clientID": "512121410387312641",
   "clientSecret": "uMx74tHwhgW1l-ysKADeSlCv4zj6YuqA",
-  "callbackURL": "https://3e9f67d8.ngrok.io/auth/callback",
+  "callbackURL": "https://12f023b8.ngrok.io/auth/callback",
   "secret": "kjfhaugdfa6gtdujabnfygafyhajnfuafjjanfiuahfuwsahfuh",
   "rethink": {
     "host": "127.0.0.1",

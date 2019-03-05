@@ -112,7 +112,7 @@ router.post('/add', user.configure, user.auth, user.inServer, user.isBanned, asy
       r.table('bots_backup').get(req.body.client_id).delete().run()
       client.users.get(req.user.id).send("\:inbox_tray: Your bot \`" + discordResponse.username + "\` <@" + req.body.client_id + "> has been added to the queue. Please wait while a Website Moderator reviews it.")
       .catch(e => console.log("Failed to DM user."));
-    client.channels.get(settings.channels.weblog).send("\:inbox_tray: <@" + req.user.id + "> added \`" + discordResponse.username + "\` <@" + req.body.client_id + "> (\:eyes: <@&" + settings.roles.staff + ">)\n<https://3e9f67d8.ngrok.io/bots/" + req.body.client_id + ">")
+    client.channels.get(settings.channels.weblog).send("\:inbox_tray: <@" + req.user.id + "> added \`" + discordResponse.username + "\` <@" + req.body.client_id + "> (\:eyes: <@&" + settings.roles.staff + ">)\n<https://12f023b8.ngrok.io/bots/" + req.body.client_id + ">")
     res.status(201).render('error', { title: 'Success', status: 201, message: 'Your bot has been added to the queue! Please wait while a Website Moderator reviews it.'}) 
   } else {
       return res.status(404).render('error', { title: 'Error', status: 404, message: 'This bot does not exist on Discord.'}) 
@@ -129,7 +129,7 @@ router.post('/verification', user.configure, user.auth, user.inServer, async (re
   const checkBot = await r.table('bots').get(req.body.bot).run();
   const checkApp = await r.table('verification_apps').get(req.body.bot).run();
   if (!checkBot || checkBot.owner != req.user.id) return res.status(401).render('error', { title: 'Error', status: 401, message: 'You don\'t own that bot. '});
-  if(!checkBot.approved) return res.status(401).render('error', { title: 'Error', status: 401, message: 'You cannot apply for verification until your bot is approved, and has been on the list for at least 3 days. Read <a href="https://3e9f67d8.ngrok.io/docs/verification">https://3e9f67d8.ngrok.io/docs/verification</a>. '});
+  if(!checkBot.approved) return res.status(401).render('error', { title: 'Error', status: 401, message: 'You cannot apply for verification until your bot is approved, and has been on the list for at least 3 days. Read <a href="https://12f023b8.ngrok.io/docs/verification">https://12f023b8.ngrok.io/docs/verification</a>. '});
   if (checkApp) return res.status(400).render('error', { title: 'Error', status: 400, message: 'You have already applied this bot for verification.'});
 
   try {
@@ -180,7 +180,7 @@ router.post('/verification', user.configure, user.auth, user.inServer, async (re
     m.react('✅')
     m.react('❌')
   })
-  client.channels.get(settings.channels.weblog).send("<:" + settings.emojis.verified + "> <@" + req.user.id + "> applied \`" + checkBot.name + "\` <@" + req.body.bot + "> for verification.\n<https://3e9f67d8.ngrok.io/bots/" + req.body.bot + ">");
+  client.channels.get(settings.channels.weblog).send("<:" + settings.emojis.verified + "> <@" + req.user.id + "> applied \`" + checkBot.name + "\` <@" + req.body.bot + "> for verification.\n<https://12f023b8.ngrok.io/bots/" + req.body.bot + ">");
   res.status(200).render('error', { title: 'Success', status: 200, message: 'Thanks for applying for verification! Please wait while a Website Administrator reviews it.'});
 });
 
@@ -297,7 +297,7 @@ router.post('/:id/edit', user.configure, user.auth, perm(1), async (req, res, ne
       if (!userTag) return 'Invalid-User#0000'
       return userTag.tag
       }).join(', ')
-    client.channels.get(settings.channels.weblog).send("\:pencil: " + req.user.username + "#" + req.user.discriminator + " (" + req.user.id + ") edited \`" + discordResponse.username + "\` <@" + req.params.id + "> by " + botDevs + "\n<https://3e9f67d8.ngrok.io/bots/" + req.params.id + ">")
+    client.channels.get(settings.channels.weblog).send("\:pencil: " + req.user.username + "#" + req.user.discriminator + " (" + req.user.id + ") edited \`" + discordResponse.username + "\` <@" + req.params.id + "> by " + botDevs + "\n<https://12f023b8.ngrok.io/bots/" + req.params.id + ">")
     res.status(200).render('error', { title: 'Success', status: 200, message: 'Successfully updated bot.'});
   }
 }) }) }) 
@@ -394,7 +394,7 @@ router.post('/resubmit/:id', user.configure, user.auth, user.inServer, user.isBa
         r.table('bots_backup').get(req.params.id).delete().run()
         client.users.get(req.user.id).send("\:inbox_tray: Your bot \`" + discordResponse.username + "\` <@" + req.params.id + "> has been re-added to the queue. Please be patient while a Website Moderator approves it.")
         .catch(e => console.log("Failed to DM user."));
-      client.channels.get(settings.channels.weblog).send("\:inbox_tray: <@" + req.user.id + "> resubmitted \`" + discordResponse.username + "\` <@" + req.params.id + "> (\:eyes: <@&" + settings.roles.staff + ">)\n<https://3e9f67d8.ngrok.io/bots/" + req.params.id + ">")
+      client.channels.get(settings.channels.weblog).send("\:inbox_tray: <@" + req.user.id + "> resubmitted \`" + discordResponse.username + "\` <@" + req.params.id + "> (\:eyes: <@&" + settings.roles.staff + ">)\n<https://12f023b8.ngrok.io/bots/" + req.params.id + ">")
       res.status(200).render('error', { title: 'Success', status: 200, message: 'Thanks for re-adding your bot! It will be looked at soon.'}) 
     } else {
         return res.status(404).render('error', { title: 'Error', status: 404, message: 'This bot does not exist on Discord.'}) 
@@ -427,11 +427,11 @@ router.get('/:id/approve', user.configure, user.auth, user.mods, (req, res, next
       }).join(', ');
     r.table('bots').get(req.params.id).update({ approved: true }).run()
     try {
-      await client.users.get(bot.owner).send("\:white_check_mark: Your bot \`" + bot.name + "\` <@" + bot.id + "> has been approved by <@" + req.user.id + ">! You can check it out here:\n<https://3e9f67d8.ngrok.io/bots/" + bot.id + ">")
+      await client.users.get(bot.owner).send("\:white_check_mark: Your bot \`" + bot.name + "\` <@" + bot.id + "> has been approved by <@" + req.user.id + ">! You can check it out here:\n<https://12f023b8.ngrok.io/bots/" + bot.id + ">")
     } catch(e) {
       console.log("Failed to alert bot dev.")
     }
-    client.channels.get(settings.channels.weblog).send("\:white_check_mark: <@" + req.user.id + "> approved \`" + bot.name + "\` <@" + bot.id + "> by " + botDevs + "\n<https://3e9f67d8.ngrok.io/bots/" + bot.id + ">")
+    client.channels.get(settings.channels.weblog).send("\:white_check_mark: <@" + req.user.id + "> approved \`" + bot.name + "\` <@" + bot.id + "> by " + botDevs + "\n<https://12f023b8.ngrok.io/bots/" + bot.id + ">")
     if (client.guilds.get(settings.guildID).members.find(u => u.id == bot.id)) return res.status(200).render('error', { title: 'Success', status: 200, message: 'Successfully approved bot.'});
     res.status(200).render('error', { title: 'Success', status: 200, message: 'Successfully approved bot. Please add bot to main guild.'});
     
@@ -474,7 +474,7 @@ router.get('/:id/verify', user.configure, user.auth, user.admins, (req, res, nex
     } catch(e) {
       console.log("Failed to alert bot dev.")
     }
-    client.channels.get(settings.channels.weblog).send("<a:" + settings.emojis.verified + "> <@" + req.user.id + "> verified \`" + bot.name + "\` <@" + bot.id + "> by " + botDevs + "\n<https://3e9f67d8.ngrok.io/bots/" + bot.id + ">")
+    client.channels.get(settings.channels.weblog).send("<a:" + settings.emojis.verified + "> <@" + req.user.id + "> verified \`" + bot.name + "\` <@" + bot.id + "> by " + botDevs + "\n<https://12f023b8.ngrok.io/bots/" + bot.id + ">")
     res.status(200).render('error', { title: 'Success', status: 200, message: 'Successfully verified bot.'});
   })
 });
@@ -509,7 +509,7 @@ router.post('/:id/unverify', user.configure, user.auth, user.admins, (req, res, 
       } catch(e) {
         console.log("Failed to alert bot dev.")
       }
-      client.channels.get(settings.channels.weblog).send("<a:" + settings.emojis.verified + "> <@" + req.user.id + "> unverified \`" + bot.name + "\` <@" + bot.id + "> by " + botDevs + "\n<https://3e9f67d8.ngrok.io/bots/" + bot.id + ">")
+      client.channels.get(settings.channels.weblog).send("<a:" + settings.emojis.verified + "> <@" + req.user.id + "> unverified \`" + bot.name + "\` <@" + bot.id + "> by " + botDevs + "\n<https://12f023b8.ngrok.io/bots/" + bot.id + ">")
       client.channels.get(settings.channels.verification_log).send("**" + req.user.username + "#" + req.user.discriminator + "** unverified \`" + bot.name + "\` <@" + bot.id + "> with reason \`" + req.body.reason + "\`.");
       res.status(200).render('error', { title: 'Success', status: 200, message: 'Successfully unverified bot.'});
     } else {
