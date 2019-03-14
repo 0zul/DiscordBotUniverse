@@ -4,6 +4,16 @@
         <ul class="menu-list">
             <li><a href="/staff" id="staffmenuoption">Statistics</a></li>
             <li><a href="/staff/queue" id="staffmenuoption">Bot Queue</a></li>
+			 <p class="menu-label">Administration</p>
+        <ul class="menu-list">
+            <li><a href="/staff/admin/users" id="staffmenuoption">Users</a></li>
+            <li><a href="/staff/admin/verification" id="staffmenuoption">Verification</a></li>
+			<p class="menu-label">Site Options</p>
+        <ul class="menu-list">
+            <li><a href="/staff/admin/pull" id="staffmenuoption">Pull Repository</a></li>
+			<p class="menu-label">Test Admin</p>
+			 <li><a href="/bots" id="staffmenuoption">Bots</a></li>
+        </ul>
         </ul>
         <% if (user.admin) { %>
         <p class="menu-label">Administration</p>

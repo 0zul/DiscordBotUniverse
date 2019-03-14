@@ -267,7 +267,7 @@ pre {
   font-family: monospace; }
 
 body {
-  color: #4a4a4a;
+  color: #000000;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5; }
@@ -646,13 +646,13 @@ a.has-text-white:hover, a.has-text-white:focus {
   background-color: #fff !important; }
 
 .has-text-black {
-  color: #0a0a0a !important; }
+  color: #fff !important; }
 
 a.has-text-black:hover, a.has-text-black:focus {
-  color: black !important; }
+  color: white !important; }
 
 .has-background-black {
-  background-color: #0a0a0a !important; }
+  background-color: #fff !important; }
 
 .has-text-light {
   color: whitesmoke !important; }
@@ -1626,7 +1626,7 @@ a.box:active {
         box-shadow: none;
         color: #fff; }
   .button.is-warning {
-    background-color: #ffdd57;
+    background-color: #FF0096;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.7); }
     .button.is-warning:hover, .button.is-warning.is-hovered {
@@ -1643,28 +1643,28 @@ a.box:active {
       border-color: transparent;
       color: rgba(0, 0, 0, 0.7); }
     .button.is-warning[disabled] {
-      background-color: #ffdd57;
+      background-color: #FF00F3;
       border-color: transparent;
       box-shadow: none; }
     .button.is-warning.is-inverted {
       background-color: rgba(0, 0, 0, 0.7);
-      color: #ffdd57; }
+      color: #FF00F3; }
       .button.is-warning.is-inverted:hover {
         background-color: rgba(0, 0, 0, 0.7); }
       .button.is-warning.is-inverted[disabled] {
         background-color: rgba(0, 0, 0, 0.7);
         border-color: transparent;
         box-shadow: none;
-        color: #ffdd57; }
+        color: #FF00F3; }
     .button.is-warning.is-loading::after {
       border-color: transparent transparent rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) !important; }
     .button.is-warning.is-outlined {
       background-color: transparent;
-      border-color: #ffdd57;
+      border-color: #FF00F3;
       color: #ffdd57; }
       .button.is-warning.is-outlined:hover, .button.is-warning.is-outlined:focus {
-        background-color: #ffdd57;
-        border-color: #ffdd57;
+        background-color: #FF00F3;
+        border-color: #FF00F3;
         color: rgba(0, 0, 0, 0.7); }
       .button.is-warning.is-outlined.is-loading::after {
         border-color: transparent transparent #ffdd57 #ffdd57 !important; }
@@ -3286,13 +3286,13 @@ a.box:active {
     background-color: #209cee;
     color: #fff; }
   .tag:not(body).is-success {
-    background-color: #23d160;
+    background-color: #0048FF;
     color: #fff; }
   .tag:not(body).is-warning {
     background-color: #ffdd57;
     color: rgba(0, 0, 0, 0.7); }
   .tag:not(body).is-danger {
-    background-color: #ff3860;
+    background-color: #FF0004;
     color: #fff; }
   .tag:not(body).is-medium {
     font-size: 1rem; }
@@ -3372,7 +3372,7 @@ a.tag:hover {
   .title.is-2 {
     font-size: 2.5rem; }
   .title.is-3 {
-    color: #7289da;
+    color: #fff;
     text-align: center;
     font-size: 2rem; }
   .title.is-4 {
@@ -3966,7 +3966,7 @@ a.dropdown-item {
   padding: 20px; }
 
 .navbar {
-  background-color: #7289da;
+  background-color: #5A5A59;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
@@ -6097,7 +6097,7 @@ label.panel-block {
         color: #fff; }
     @media screen and (max-width: 1087px) {
       .hero.is-primary .navbar-menu {
-        background-color: #7289da; } }
+        background-color: #000000; } }
     .hero.is-primary .navbar-item,
     .hero.is-primary .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
@@ -6426,21 +6426,21 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 body, html {
-  background-color: #fff;
+  background-color: #2a2828;
   font-family: 'Open Sans', sans-serif; }
 
 pre code {
-  background-color: #f5f5f5;
-  border: 1px solid #999;
+  background-color: #000000;
+  border: 1px solid #000000;
   display: block;
   padding: 20px; }
 
 .hero.is-info {
-  background-color: #7289da;
-  color: #fff; }
+  background-color: #5A5A59;
+  color: #2a2828; }
 
 .label {
-  color: #4a4a4a; }
+  color: white; }
 
 .brand-logo {
   cursor: pointer;
@@ -6494,10 +6494,9 @@ pre code {
 
 .input-dark {
   background-clip: padding-box;
-  background-color: #444;
+  background-color: #fff;
   border: 1px solid transparent;
   border-radius: .25rem;
-  color: #fff;
   display: block;
   font-size: .9375rem;
   line-height: 1.5;
@@ -6508,12 +6507,12 @@ pre code {
   width: 100%; }
 
 .textarea-dark {
-  background-color: #444;
+  background-color: #fff;
   border: 1px solid transparent;
-  color: #fff; }
+}
 
 .select select {
-  background-color: #444;
+  background-color: #000000;
   color: #fff; }
 
 .dangerzone-select select {
@@ -6540,9 +6539,9 @@ pre code {
   user-select: none; }
 
 .radio {
-  color: black; }
+  color: white; }
   .radio:hover {
-    color: black; }
+    color: white; }
 
 .card {
   background-color: #2c2f33;
@@ -6567,7 +6566,7 @@ pre code {
   border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: #fff;
   border: 2px solid #7289da;
-  border-radius: 40px;
+  border-radius: 30px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
   .box strong {
     color: #7289da; }
@@ -6581,8 +6580,6 @@ pre code {
 .botcard {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  border: 2px solid #7289da;
-  border-radius: 5%;
   text-align: center;
   color: #fff;
   transition: transform 0.4s ease;
@@ -6609,7 +6606,7 @@ pre code {
   padding: 30px; }
 
 .botcard > .wrapper > .name {
-  color: #7289da;
+  color: #fff;
   font-size: 30px; }
 
 .botcard > .wrapper > .author {
@@ -6618,24 +6615,24 @@ pre code {
   margin: 10px 0; }
 
 .botcard > .wrapper > .author > a {
-  color: #7289da; }
+  color: #fff; }
 
 .botcard > .wrapper > .desc {
-  color: #7289da; }
+  color: #fff; }
 
 .botcard > .options {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-top: 2px solid #7289da;
+  
   text-align: center; }
 
 .botcard > .options > a {
-  color:  #7289da;
-  padding: 17px;
+  color:  #FFCC00;
+  padding: 26px;
   transition: background-color 0.2s ease; }
 
 .botcard > .options > a:first-child {
-  border-right: 2px solid #7289da; }
+  border-right: 2px transparent #000000; }
 
 .botcard > .options > a:hover {
   background-color: #00000009; }
@@ -6727,11 +6724,11 @@ pre code {
 /* Habchy's ID Revisions (why the website wasnt already using IDS is beyond me */
 
 a#staffmenuoption, p#headingsubtitle {
-  color: #2C2F33;
+  color: #fff;
 }
 
 p#headingtitle {
-  color: #7289da;
+  color: #fff;
 }
 
 .box#usercard {
@@ -6762,7 +6759,7 @@ p#headingtitle {
   transition: transform 0.4s ease;
   animation: card-appear 1.5s;
   animation-fill-mode: forwards;
-  color: #7289da;
+  color: #fff;
   text-align: center;
 }
 
@@ -6881,15 +6878,15 @@ a.navbar-item, a._brand, div._contact a {
 
 /* width */
 ::-webkit-scrollbar {
-    width:11px;
+    width:14px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #7289da; 
+
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #535D9C; 
+::-webkit-scrollbar-thumb {
+    background: #424242; 
 }
