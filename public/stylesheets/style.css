@@ -6582,7 +6582,7 @@ pre code {
   grid-template-rows: auto 1fr auto;
   text-align: center;
   color: #fff;
-  transition: transform 0.4s ease;
+  transition: transform 0.9s ease;
   animation: card-appear 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -6595,7 +6595,7 @@ pre code {
   box-shadow: 2px 2px 4px #1111112d; }
 
 .botcard > .avatar {
-  border-radius: 50%;
+  border-radius: 55%;
   margin: auto;
   margin-top: 30px;
   margin-bottom: -30px;

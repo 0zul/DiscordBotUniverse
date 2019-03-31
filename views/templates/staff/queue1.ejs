@@ -1,0 +1,103 @@
+<%- include('../../partials/header.ejs') %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+body{
+background-color: #2a2828;
+}
+.jumbotron {
+background-color: #201e1e;
+}
+</style>
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Bot Queue.
+      </h1>
+      <h2 class="subtitle">
+        Manage bot queue.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-fluid">
+    <br>
+     <div class="jumbotron">
+	 
+         <div class="container">
+            <h1 style="color: #ffffff" class="display-4" style="margin-top: 20px;">Hello <span class="username"><%= username %></span>!</h1>
+            <p style="color: #ffffff" class="lead" id="header">There are currently <b class="queueLength"><%= queueLength %></b> bots in the queue for <b class="guildName"><%= guildName %></b></p>
+         </div>
+      </div>
+      <div class="jumbotron">
+         <div class="container">
+            <p style="color: #ffffff" class="lead">
+               Awaiting Actions
+            </p>
+         </div>
+         <br>
+         <div class="container">
+            <table class="table table-borderless table-hover">
+               <thead>
+                  <tr>
+                     <th scope="col">Position</th>
+                     <th scope="col">Prefix</th>
+                     <th scope="col">Bot</th>
+                     <th scope="col">Currently</th>
+                     <th scope="col">Actions</th>
+                  </tr>
+               </thead>
+               <tbody id="actions">
+			   
+			   </tbody>
+            </table>
+         </div>
+      </div>
+      <br>
+      <div class="jumbotron">
+         <div class="container">
+            <p style="color: #ffffff" class="lead">
+               In Progress
+            </p>
+         </div>
+         <br>
+         <div class="container">
+            <table class="table table-borderless table-hover">
+               <thead>
+                  <tr>
+                     <th scope="row">Position</th>
+                     <th scope="col">Prefix</th>
+                     <th scope="col">Bot</th>
+                     <th scope="col">Currently</th>
+                     <th scope="col">Actions</th>
+                  </tr>
+               </thead>
+               <tbody id="testing"></tbody>
+            </table>
+         </div>
+      </div>
+      <br>
+      <div class="jumbotron">
+         <div class="container">
+            <p style="color: #ffffff" class="lead">
+               Leaderboard
+            </p>
+         </div>
+         <br>
+         <div class="container">
+            <table class="table table-borderless table-hover">
+               <thead>
+                  <tr>
+                     <th scope="col">User</th>
+                     <th scope="col">Bots Tested</th>
+                  </tr>
+               </thead>
+               <tbody id="leaderboard"></tbody>
+            </table>
+         </div>
+      </div>
+  </div>
+</section>
+<%- include('../../partials/footer.ejs') %>

@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" value="Discord Bot Universe">
   <meta property="og:title" content="<%= userInfo.tag %>">
-  <meta property="og:url" content=" https://a2870295.ngrok.io/user/<%= userInfo.id %>">
+  <meta property="og:url" content="https://e5e2b250.ngrok.io/user/<%= userInfo.id %>">
   <meta property="og:description" content="<%= userInfo.bio || "This user has not set a bio." %>">
   <meta property="og:image" content="https://cdn.discordapp.com/avatars/<%= userInfo.id %>/<%= userInfo.avatar %>.png?size=512">
   <link href="/img/image0.png" rel="shortcut-icon" />
@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <a class="navbar-link"><%= user.username + "#" + user.discriminator %></a>
                   <div class="navbar-dropdown">
                     <a href="/user/<%= user.id %>" class="navbar-item">Profile</a>
+					 <a class="navbar-item" href="/staff">Staff Only</a>
                       <a class="navbar-item" href="/auth/logout">Logout</a>
                   </div>
               </div>

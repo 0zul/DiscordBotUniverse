@@ -28,6 +28,19 @@ router.get('/queue', user.configure, user.auth, user.mods, (req, res, next) => {
 	})
 });
 
+router.get('/queuedev', (req,res) => {
+	r.table('bots').filter({ approved: false }).merge(bot => ({
+		ownerinfo: bot('owners')
+			.default([])
+			.append(bot('owner'))
+			.map(id => r.table('users').get(id))
+			.default({ username: 'Unknown', tag: 'Unknown#0000' })
+	})).run(async (error, bots) => {
+		const botChunk = chunk(bots, 3);
+		res.render('staff/queue1', {title: 'Bot Queue', username: "Puyodead1", queueLength: bots.length, guildName: "Discord Bot Universe", botData: bots, botChunk});
+	})
+})
+
 router.get('/admin/users', user.configure, user.auth, user.admins, (req, res, next) => {
 	r.table('users').run(async (error, users) => {
 		const userChunk = chunk(users, 3);

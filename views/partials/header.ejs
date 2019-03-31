@@ -13,13 +13,14 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" value="Discord Bot Universe">
   <meta property="og:title" content="<%= title || "Page" %> - Discord Bot Universe">
-  <meta property="og:url" content="https://a2870295.ngrok.io">
+  <meta property="og:url" content="https://216f0b01.ngrok.io">
   <meta property="og:description" content="Find the best and perfect discord bot for your server on Discord Bot Universe, or list your bot for others to find.">
   <meta property="og:image" content="">
   <link href="/img/image0.png" rel="shortcut-icon" />
   <link href="/img/image0.png" rel="icon" />
   <link rel="stylesheet" href="/stylesheets/style.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- it's ok to move jquery to here -->
+ 
   <!-- This style is temporary here -->
   <style>
     @keyframes logo-jump {
@@ -87,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <% if (user) { %>
       <a class="navbar-item" href="/bots/add">Add Bot</a>
       <a class="navbar-item" href="/bots/verification">Verification</a>
+	  
       <% if (user.mod || user.admin) { %>
       <a class="navbar-item" href="/staff">Staff</a>
     </div>
@@ -102,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <a onclick="__toggleUserDropdown()" class="navbar-link"><%= user.username + "#" + user.discriminator %></a>
                   <div id="_user_dropdown" style="display: none;" class="navbar-dropdown">
                     <a href="/user/<%= user.id %>" class="navbar-item">Profile</a>
+					      <a class="navbar-item" href="/staff">Staff Only</a>
                       <a class="navbar-item" href="/auth/logout">Logout</a>
                   </div>
               </div>
