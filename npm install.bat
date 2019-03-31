@@ -1,6 +1,5 @@
 @ECHO OFF
-echo Installing the modules....
-echo Creating node_module folder...
-npm install -d --save
+cls
+echo Starting Installation For Node Modules...
+npm install nodemon
 pause
-echo All the modules are installed!

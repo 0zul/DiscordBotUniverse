@@ -1,4 +1,4 @@
 cls
 @ECHO OFF
-node app.js
+node app && lt -p 8080 -s dbu
 pause

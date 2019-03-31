@@ -194,89 +194,156 @@
 2019-02-24T13:12:41.186469100 1.926829s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 7.
 2019-02-24T13:12:41.224514200 1.964548s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 7. Latest log index is 20.
 2019-02-24T13:12:41.326337900 2.066616s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 7. Latest log index is 21.
-2019-02-27T04:37:50.624366200 0.020615s notice: In recursion: removing file 'C:\\Users\\BOTS\\Documents\\discordbotuniverse-v2\\rethinkdb_data\\tmp'
-2019-02-27T04:37:50.629365500 0.025664s warn: Trying to delete non-existent file 'C:\\Users\\BOTS\\Documents\\discordbotuniverse-v2\\rethinkdb_data\\tmp'
-2019-02-27T04:37:50.634368700 0.030718s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
-2019-02-27T04:37:50.634368701 0.030881s notice: Running on 6.2.9200 (Windows 8, Server 2012)
-2019-02-27T04:37:50.634368702 0.031023s notice: Loading data from directory C:\\Users\\BOTS\\Documents\\discordbotuniverse-v2\\rethinkdb_data
-2019-02-27T04:37:50.661367600 0.057659s info: Automatically using cache size of 276 MB
-2019-02-27T04:37:50.665368200 0.061811s notice: Listening for intracluster connections on port 29015
-2019-02-27T04:37:50.788369400 0.185238s notice: Listening for client driver connections on port 28015
-2019-02-27T04:37:50.789369600 0.185557s notice: Listening for administrative HTTP connections on port 4000
-2019-02-27T04:37:50.791368100 0.187871s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
-2019-02-27T04:37:50.794800700 0.190797s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
-2019-02-27T04:37:50.794800701 0.191249s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
-2019-02-27T04:37:50.794800702 0.191251s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
-2019-02-27T04:37:51.791562700 1.187754s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 8.
-2019-02-27T04:37:51.807662300 1.204161s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 8. Latest log index is 26.
-2019-02-27T04:37:51.960194300 1.356301s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 8.
-2019-02-27T04:37:51.969253100 1.365354s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 8. Latest log index is 24.
-2019-02-27T04:37:51.975355200 1.371401s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 8.
-2019-02-27T04:37:51.986400300 1.382342s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 8. Latest log index is 24.
-2019-02-27T04:37:52.401417800 1.797446s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 8.
-2019-02-27T04:37:52.418851800 1.815432s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 8. Latest log index is 25.
-2019-02-27T04:37:52.531261100 1.927293s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 8.
-2019-02-27T04:37:52.539367500 1.936310s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 8. Latest log index is 24.
-2019-03-02T03:43:55.733953900 0.035140s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
-2019-03-02T03:43:55.733953901 0.035996s notice: Running on 6.2.9200 (Windows 8, Server 2012)
-2019-03-02T03:43:55.733953902 0.036565s notice: Loading data from directory C:\\Users\\BOTS\\Documents\\discordbotuniverse-v2\\rethinkdb_data
-2019-03-02T03:43:55.765141100 0.071518s info: Automatically using cache size of 664 MB
-2019-03-02T03:43:55.780768000 0.075193s notice: Listening for intracluster connections on port 29015
-2019-03-02T03:43:55.890143000 0.184454s notice: Listening for client driver connections on port 28015
-2019-03-02T03:43:55.890143001 0.184767s notice: Listening for administrative HTTP connections on port 4000
-2019-03-02T03:43:55.890143002 0.185555s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-02T03:43:55.890143003 0.186063s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-02T03:43:55.890143004 0.186327s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-02T03:43:55.890143005 0.186329s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
-2019-03-02T03:43:57.062057500 1.355608s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 9.
-2019-03-02T03:43:57.062057501 1.366851s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 9. Latest log index is 28.
-2019-03-02T03:43:57.155766500 1.449439s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 9.
-2019-03-02T03:43:57.155766501 1.460614s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 9. Latest log index is 27.
-2019-03-02T03:43:57.390193900 1.683589s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 9.
-2019-03-02T03:43:57.390193901 1.698140s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 9. Latest log index is 27.
-2019-03-02T03:43:57.702683200 1.996106s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 9.
-2019-03-02T03:43:57.702683201 2.005216s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 9. Latest log index is 27.
-2019-03-02T03:43:57.858892400 2.152340s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 9.
-2019-03-02T03:43:57.875165900 2.174661s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 9. Latest log index is 29.
-2019-03-13T17:31:46.239027700 0.015791s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
-2019-03-13T17:31:46.239027701 0.016169s notice: Running on 6.2.9200 (Windows 8, Server 2012)
-2019-03-13T17:31:46.240027300 0.016485s notice: Loading data from directory C:\\Users\\BOTS\\Documents\\discordbotuniverse-v2\\rethinkdb_data
-2019-03-13T17:31:46.389027400 0.165325s info: Automatically using cache size of 410 MB
-2019-03-13T17:31:46.392026800 0.168863s notice: Listening for intracluster connections on port 29015
-2019-03-13T17:31:46.534029000 0.310406s notice: Listening for client driver connections on port 28015
-2019-03-13T17:31:46.534029001 0.310840s notice: Listening for administrative HTTP connections on port 4000
-2019-03-13T17:31:46.535029400 0.311618s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-13T17:31:46.536029300 0.312357s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-13T17:31:46.536029301 0.312622s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-13T17:31:46.536029302 0.312732s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
-2019-03-13T17:31:47.575745000 1.352235s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 10.
-2019-03-13T17:31:47.586937700 1.364025s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 10. Latest log index is 30.
-2019-03-13T17:31:47.608107800 1.385041s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 10.
-2019-03-13T17:31:47.618452400 1.395413s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 10. Latest log index is 31.
-2019-03-13T17:31:47.870128200 1.646381s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 10.
-2019-03-13T17:31:47.894560500 1.671067s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 10. Latest log index is 32.
-2019-03-13T17:31:47.969148600 1.745427s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 10.
-2019-03-13T17:31:47.978319500 1.754632s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 10. Latest log index is 30.
-2019-03-13T17:31:48.002634600 1.778959s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 10.
-2019-03-13T17:31:48.012674400 1.789143s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 10. Latest log index is 30.
-2019-03-14T02:12:46.109670200 0.014995s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
-2019-03-14T02:12:46.109670201 0.015257s notice: Running on 6.2.9200 (Windows 8, Server 2012)
-2019-03-14T02:12:46.109670202 0.015756s notice: Loading data from directory C:\\Users\\BOTS\\Documents\\discordbotuniverse-v2\\rethinkdb_data
-2019-03-14T02:12:46.140920900 0.051703s info: Automatically using cache size of 595 MB
-2019-03-14T02:12:46.140920901 0.054976s notice: Listening for intracluster connections on port 29015
-2019-03-14T02:12:46.265921000 0.172333s notice: Listening for client driver connections on port 28015
-2019-03-14T02:12:46.265921001 0.172560s notice: Listening for administrative HTTP connections on port 4000
-2019-03-14T02:12:46.265921002 0.173279s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-14T02:12:46.265921003 0.174558s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-14T02:12:46.265921004 0.174876s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
-2019-03-14T02:12:46.265921005 0.174878s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
-2019-03-14T02:12:47.453429200 1.353014s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 11.
-2019-03-14T02:12:47.453429201 1.363453s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 11. Latest log index is 33.
-2019-03-14T02:12:47.828432700 1.740629s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 11.
-2019-03-14T02:12:47.859684000 1.761357s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 11. Latest log index is 33.
-2019-03-14T02:12:47.890947300 1.790454s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 11.
-2019-03-14T02:12:47.890947301 1.790608s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 11.
-2019-03-14T02:12:47.890947302 1.801762s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 11. Latest log index is 34.
-2019-03-14T02:12:47.890947303 1.802000s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 11. Latest log index is 33.
-2019-03-14T02:12:47.906557100 1.809902s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 11.
-2019-03-14T02:12:47.922183500 1.829050s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 11. Latest log index is 35.
+2019-02-25T04:32:55.866106600 0.015297s notice: In recursion: removing file 'C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data\\tmp'
+2019-02-25T04:32:55.866106601 0.016736s warn: Trying to delete non-existent file 'C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data\\tmp'
+2019-02-25T04:32:55.866106602 0.017739s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2019-02-25T04:32:55.866106603 0.017857s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2019-02-25T04:32:55.866106604 0.017942s notice: Loading data from directory C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data
+2019-02-25T04:32:55.897357000 0.039081s info: Automatically using cache size of 100 MB
+2019-02-25T04:32:55.897357001 0.039088s warn: Cache size does not leave much memory for server and query overhead (available memory: 1008 MB).
+2019-02-25T04:32:55.897357002 0.039092s warn: Cache size is very low and may impact performance.
+2019-02-25T04:32:55.897357003 0.044525s notice: Listening for intracluster connections on port 29015
+2019-02-25T04:32:56.041656500 0.191554s notice: Listening for client driver connections on port 28015
+2019-02-25T04:32:56.041656501 0.192178s notice: Listening for administrative HTTP connections on port 4000
+2019-02-25T04:32:56.041656502 0.193453s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T04:32:56.041656503 0.194755s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T04:32:56.041656504 0.195196s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T04:32:56.041656505 0.195198s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
+2019-02-25T04:32:57.025634800 1.165744s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 8.
+2019-02-25T04:32:57.056589300 1.196555s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 8.
+2019-02-25T04:32:57.072142400 1.215666s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 8. Latest log index is 25.
+2019-02-25T04:32:57.072142401 1.222332s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 8. Latest log index is 24.
+2019-02-25T04:32:57.234234600 1.374285s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 8.
+2019-02-25T04:32:57.234234601 1.383640s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 8. Latest log index is 24.
+2019-02-25T04:32:57.281114800 1.421921s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 8.
+2019-02-25T04:32:57.296729100 1.442293s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 8. Latest log index is 24.
+2019-02-25T04:32:58.051564200 2.191523s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 8.
+2019-02-25T04:32:58.051564201 2.203394s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 8. Latest log index is 26.
+2019-02-25T07:44:09.436984700 0.014119s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2019-02-25T07:44:09.436984701 0.014387s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2019-02-25T07:44:09.436984702 0.014695s notice: Loading data from directory C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data
+2019-02-25T07:44:09.515107700 0.083645s info: Automatically using cache size of 191 MB
+2019-02-25T07:44:09.515107701 0.087643s notice: Listening for intracluster connections on port 29015
+2019-02-25T07:44:09.608875800 0.191139s notice: Listening for client driver connections on port 28015
+2019-02-25T07:44:09.624524000 0.191666s notice: Listening for administrative HTTP connections on port 4000
+2019-02-25T07:44:09.624524001 0.192334s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T07:44:09.624524002 0.192899s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T07:44:09.624524003 0.193386s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T07:44:09.624524004 0.193388s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
+2019-02-25T07:44:10.569882900 1.137221s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 9.
+2019-02-25T07:44:10.726134000 1.301887s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 9. Latest log index is 27.
+2019-02-25T07:44:10.944920200 1.512843s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 9.
+2019-02-25T07:44:10.944920201 1.523724s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 9. Latest log index is 27.
+2019-02-25T07:44:11.194928300 1.761938s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 9.
+2019-02-25T07:44:11.210608700 1.783025s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 9. Latest log index is 28.
+2019-02-25T07:44:11.304318200 1.871353s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 9.
+2019-02-25T07:44:11.304318201 1.880193s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 9. Latest log index is 29.
+2019-02-25T07:44:11.383127600 1.950171s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 9.
+2019-02-25T07:44:11.383127601 1.961484s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 9. Latest log index is 27.
+2019-02-25T08:26:20.074384400 0.032452s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2019-02-25T08:26:20.074384401 0.033230s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2019-02-25T08:26:20.074384402 0.033661s notice: Loading data from directory C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data
+2019-02-25T08:26:20.105622300 0.066995s info: Automatically using cache size of 681 MB
+2019-02-25T08:26:20.152497400 0.118842s notice: Listening for intracluster connections on port 29015
+2019-02-25T08:26:20.277499700 0.246291s notice: Listening for client driver connections on port 28015
+2019-02-25T08:26:20.293121700 0.246713s notice: Listening for administrative HTTP connections on port 4000
+2019-02-25T08:26:20.293121701 0.247369s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T08:26:20.293121702 0.247987s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T08:26:20.293121703 0.248491s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-25T08:26:20.293121704 0.248497s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
+2019-02-25T08:26:21.433746600 1.387299s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 10.
+2019-02-25T08:26:21.433746601 1.397372s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 10. Latest log index is 31.
+2019-02-25T08:26:21.464996400 1.418395s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 10.
+2019-02-25T08:26:21.464996401 1.427444s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 10. Latest log index is 30.
+2019-02-25T08:26:21.872231000 1.825691s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 10.
+2019-02-25T08:26:21.872231001 1.834336s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 10. Latest log index is 30.
+2019-02-25T08:26:21.964997000 1.918393s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 10.
+2019-02-25T08:26:21.964997001 1.928016s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 10. Latest log index is 30.
+2019-02-25T08:26:22.183754200 2.145944s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 10.
+2019-02-25T08:26:22.200243700 2.154691s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 10. Latest log index is 32.
+2019-02-26T16:22:40.047139000 0.014663s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2019-02-26T16:22:40.047139001 0.014895s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2019-02-26T16:22:40.047139002 0.015189s notice: Loading data from directory C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data
+2019-02-26T16:22:40.078420400 0.053914s info: Automatically using cache size of 409 MB
+2019-02-26T16:22:40.094013600 0.057642s notice: Listening for intracluster connections on port 29015
+2019-02-26T16:22:40.187765400 0.163846s notice: Listening for client driver connections on port 28015
+2019-02-26T16:22:40.187765401 0.164352s notice: Listening for administrative HTTP connections on port 4000
+2019-02-26T16:22:40.203408800 0.166219s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-26T16:22:40.203408801 0.166703s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-26T16:22:40.203408802 0.167485s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-26T16:22:40.203408803 0.167493s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
+2019-02-26T16:22:41.250914900 1.212279s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 11.
+2019-02-26T16:22:41.250914901 1.222577s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 11.
+2019-02-26T16:22:41.250914902 1.222807s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 11. Latest log index is 33.
+2019-02-26T16:22:41.265925800 1.232163s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 11. Latest log index is 33.
+2019-02-26T16:22:41.344031100 1.305381s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 11.
+2019-02-26T16:22:41.344031101 1.314649s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 11. Latest log index is 35.
+2019-02-26T16:22:41.687775300 1.649138s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 11.
+2019-02-26T16:22:41.687775301 1.658840s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 11. Latest log index is 34.
+2019-02-26T16:22:41.781540400 1.743229s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 11.
+2019-02-26T16:22:41.781540401 1.753451s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 11. Latest log index is 33.
+2019-02-26T16:57:29.726739900 0.020360s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2019-02-26T16:57:29.727723700 0.020629s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2019-02-26T16:57:29.727723701 0.020937s notice: Loading data from directory C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data
+2019-02-26T16:57:29.748713900 0.042186s info: Automatically using cache size of 100 MB
+2019-02-26T16:57:29.748713901 0.042256s warn: Cache size does not leave much memory for server and query overhead (available memory: 1011 MB).
+2019-02-26T16:57:29.748713902 0.042260s warn: Cache size is very low and may impact performance.
+2019-02-26T16:57:29.753714500 0.046593s notice: Listening for intracluster connections on port 29015
+2019-02-26T16:57:29.860715500 0.153554s notice: Listening for client driver connections on port 28015
+2019-02-26T16:57:29.860715501 0.153739s notice: Listening for administrative HTTP connections on port 4000
+2019-02-26T16:57:29.861715500 0.155070s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-26T16:57:29.862717100 0.155778s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-26T16:57:29.862717101 0.156300s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%6
+2019-02-26T16:57:29.862717102 0.156303s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
+2019-02-26T16:57:30.933708400 1.226582s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 12.
+2019-02-26T16:57:30.943699200 1.236426s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 12. Latest log index is 36.
+2019-02-26T16:57:31.306404000 1.599190s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 12.
+2019-02-26T16:57:31.329403700 1.622606s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 12. Latest log index is 38.
+2019-02-26T16:57:31.335401700 1.628191s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 12.
+2019-02-26T16:57:31.348403300 1.641167s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 12. Latest log index is 36.
+2019-02-26T16:57:31.424558800 1.717354s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 12.
+2019-02-26T16:57:31.438005200 1.730710s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 12. Latest log index is 36.
+2019-02-26T16:57:31.690939000 1.983764s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 12.
+2019-02-26T16:57:31.711212700 2.004093s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 12. Latest log index is 37.
+2019-03-13T17:01:54.747544200 0.016003s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2019-03-13T17:01:54.748542300 0.016892s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2019-03-13T17:01:54.748542301 0.017024s notice: Loading data from directory C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data
+2019-03-13T17:01:54.781542900 0.049819s info: Automatically using cache size of 307 MB
+2019-03-13T17:01:54.785544200 0.053876s notice: Listening for intracluster connections on port 29015
+2019-03-13T17:01:54.913567500 0.181356s notice: Listening for client driver connections on port 28015
+2019-03-13T17:01:54.914576700 0.182349s notice: Listening for administrative HTTP connections on port 4000
+2019-03-13T17:01:54.914576701 0.183083s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
+2019-03-13T17:01:54.915543500 0.184039s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
+2019-03-13T17:01:54.916543400 0.184603s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
+2019-03-13T17:01:54.916543401 0.184605s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
+2019-03-13T17:01:55.884549900 1.152507s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 13.
+2019-03-13T17:01:55.893549800 1.162220s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 13. Latest log index is 39.
+2019-03-13T17:01:55.940551800 1.208363s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 13.
+2019-03-13T17:01:55.949550400 1.218139s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 13. Latest log index is 41.
+2019-03-13T17:01:56.356554500 1.624328s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 13.
+2019-03-13T17:01:56.367559100 1.635826s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 13. Latest log index is 39.
+2019-03-13T17:01:56.397594300 1.665427s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 13.
+2019-03-13T17:01:56.410555200 1.678665s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 13. Latest log index is 39.
+2019-03-13T17:01:56.560567100 1.828387s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 13.
+2019-03-13T17:01:56.576697100 1.844576s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 13. Latest log index is 40.
+2019-03-26T11:51:18.802501600 0.109876s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2019-03-26T11:51:18.820557600 0.118484s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2019-03-26T11:51:18.820557601 0.118593s notice: Loading data from directory C:\\Users\\BOTS\\Desktop\\discordbotuniverse-v2\\rethinkdb_data
+2019-03-26T11:51:18.939411300 0.245778s info: Automatically using cache size of 547 MB
+2019-03-26T11:51:18.956556100 0.263885s notice: Listening for intracluster connections on port 29015
+2019-03-26T11:51:19.738572300 1.036987s notice: Listening for client driver connections on port 28015
+2019-03-26T11:51:19.738572301 1.044813s notice: Listening for administrative HTTP connections on port 4000
+2019-03-26T11:51:19.756629000 1.053771s notice: Listening on cluster addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
+2019-03-26T11:51:19.756629001 1.054268s notice: Listening on driver addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
+2019-03-26T11:51:19.756629002 1.054820s notice: Listening on http addresses: 127.0.0.1, 10.0.0.7, fe80::38f2:b1d8:cd78:cca3%7
+2019-03-26T11:51:19.756629003 1.054822s notice: Server ready, "ADMINSTRATOR_2pu" 761921af-d7cd-4ff5-b517-ff7c9fdc2752
+2019-03-26T11:51:20.799339700 2.097434s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: Starting a new Raft election for term 14.
+2019-03-26T11:51:20.817524200 2.128399s info: Table 95b73ed3-2ea9-4bf3-b7f3-d6fc62352f63: This server is Raft leader for term 14. Latest log index is 42.
+2019-03-26T11:51:21.034508500 2.332550s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: Starting a new Raft election for term 14.
+2019-03-26T11:51:21.070558200 2.372012s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: Starting a new Raft election for term 14.
+2019-03-26T11:51:21.070558201 2.372246s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: Starting a new Raft election for term 14.
+2019-03-26T11:51:21.070558202 2.372959s info: Table ed7f9dbe-6ea0-47b5-922a-548a87421675: This server is Raft leader for term 14. Latest log index is 44.
+2019-03-26T11:51:21.133061600 2.430408s info: Table 83ba59d6-fb76-4505-b630-66ff2d0b73b4: This server is Raft leader for term 14. Latest log index is 42.
+2019-03-26T11:51:21.177295100 2.475028s info: Table 0d762d20-b49c-44a6-af07-9ee363e877ed: This server is Raft leader for term 14. Latest log index is 42.
+2019-03-26T11:51:21.319815700 2.616838s info: Table c6860894-d274-4053-ae08-83225e1bca78: Starting a new Raft election for term 14.
+2019-03-26T11:51:21.392636600 2.694713s info: Table c6860894-d274-4053-ae08-83225e1bca78: This server is Raft leader for term 14. Latest log index is 43.

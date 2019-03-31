@@ -10,8 +10,16 @@ const client = require('./modules/discord-bot');
 
 const r = require('./modules/database');
 const app = express();
+
+const fs = require('fs');
+const privateKey  = fs.readFileSync('./sslcert/server.key', 'utf8');
+const certificate = fs.readFileSync('./sslcert/server.crt', 'utf8');
+//const credentials = {key: privateKey, cert: certificate};
 const http = require('http');
-const server = http.createServer(app);
+//const https = require('https');
+
+const httpServer = http.createServer(app);
+//const httpsServer = https.createServer(credentials, app);
 const user = require('./modules/user');
 require('./modules/featured');
 
@@ -64,7 +72,7 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500);
   res.render('error', { title: 'Error', status: err.status, message: err.message });
 });
-
-server.listen(80, "localhost");
+httpServer.listen(80, "localhost");
+//httpsServer.listen(8080);
 
 
